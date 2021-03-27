@@ -1,3 +1,53 @@
+:root {
+  --headingfontsize: 85px;
+  --contentfontsize: 22px;
+}
+
 h1 {
-  color: red;
+  font-size: var(--headingfontsize);
+  margin: 60px 0 20px 0;;
+}
+
+body {
+  display: block;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+section {
+  margin: 40px 0 20px;
+}
+
+.home {
+  background: rgb(148, 156, 28);
+}
+
+.home p {
+  margin-bottom: 30px;
+}
+.about {
+  font-size: var(--contentfontsize);
+  max-width: 350px;
+  text-align: left;
+  borderl-left: 1px solid black;
+}
+
+.about p {
+  margin-left: 35px;
+}
+
+.work {
+  text-align: right;
+}
+
+.work .row {
+display: inline-flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-bottom: 30px;
+max-width: 75%;
+}
+
+.work .projectdescription {
+ margin: 20px;
 }
