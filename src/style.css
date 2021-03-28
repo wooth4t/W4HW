@@ -1,53 +1,136 @@
 :root {
   --headingfontsize: 85px;
   --contentfontsize: 22px;
+  /**headingfonts**/
+  --fontfamilyone: 'Alegreya SC', serif;
+  --fontfamilytwo: 'Marcellus SC', serif;
+  --fontfamilythree: 'Cinzel', serif;
+  --fontfamilyfour: 'Julius Sans One', sans-serif;
+  --fontfamilyfive: 'Playfair Display SC', serif;
+  --fontfamilysix: 'Vidaloka', serif;
+  --fontfamilyseven: 'Federo', sans-serif;
+  --fontfamilyeight: 'Montserrat Subrayada', sans-serif;
+  --fontfamilynine: 'Italiana', serif;
+  --fontfamilyten: 'Iceland', cursive;
+
+  /**contentfonts**/
+  --fontfamilytwentyone: 'Abel', sans-serif;
+  --fontfamilytwentytwo: 'Alegreya', serif; /**no**/
+  --fontfamilytwentythree: 'Arapey', serif;
+  --fontfamilytwentyfour: 'Arima Madurai', cursive; /**no**/
+  --fontfamilytwentyfive: 'Arsenal', sans-serif;
+  --fontfamilytwentysix: 'Bentham', serif;  /**no**/
+  --fontfamilytwentyseven: 'Carrois Gothic', sans-serif;
+  --fontfamilytwentyeight: 'El Messiri', sans-serif; /**no**/
+  --fontfamilytwentynine: 'Frank Ruhl Libre', serif;
+  --fontfamilythirty: 'Gilda Display', serif;
+  --fontfamilythirtyone: 'Krub', sans-serif;
+  --fontfamilythirtytwo: 'Nixie One', cursive; /**no**/
+  --fontfamilythirtythree: 'Nunito', sans-serif;
+  --fontfamilythirtyfour: 'Quicksand', sans-serif;
+  --fontfamilythirtyfive: 'Raleway', sans-serif;
+  --fontfamilythirtysix: 'Rambla', sans-serif; /**no**/
+  --fontfamilythirtyseven: 'Roboto Slab', serif; /**no**/
+  --fontfamilythirtyeight: 'Sansita', sans-serif; /**no**/
+  --fontfamilythirtynine: 'Thasadith', sans-serif;
+  --fontfamilyfourt: 'Ubuntu', sans-serif; /**no**/
+  --fontfamilyfourtyone: 'Yrsa', serif;
+
+  --colorone:  rgb(158, 160, 125);
+  --colortwo: white;
+
 }
 
 h1 {
+  font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
-  margin: 60px 0 20px 0;;
+  padding: 20px;
 }
 
-body {
-  display: block;
-  margin: 60px auto;
-  max-width: 900px;
+
+h4 {
+  font-family: var(--fontfamilytwentyfive);
+  font-style: italic;
 }
 
 section {
-  margin: 40px 0 20px;
+  margin: 80px 0 ;
 }
 
-.home {
-  background: rgb(148, 156, 28);
+p {
+  font-family: var(--fontfamilythirtythree);
 }
 
-.home p {
-  margin-bottom: 30px;
-}
-.about {
-  font-size: var(--contentfontsize);
-  max-width: 350px;
-  text-align: left;
-  borderl-left: 1px solid black;
+section.home {
+  background: var(--colorone);
+  padding-bottom: 20px;
 }
 
-.about p {
-  margin-left: 35px;
+section.work {
+  justify-content: flex-end;
 }
 
-.work {
-  text-align: right;
-}
-
-.work .row {
-display: inline-flex;
+section.work .row {
 flex-direction: row;
 justify-content: flex-end;
 margin-bottom: 30px;
 max-width: 75%;
 }
 
-.work .projectdescription {
- margin: 20px;
+section.contact {
+  background-color: var(--colorone);
+  width: 100%;
+}
+
+.navbar {
+  font-family: var(--fontfamilythirtythree);
+}
+
+.pagecontent {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.about {
+  font-size: var(--contentfontsize);
+  max-width: 400px;
+  text-align: left;
+  border-left: 10px solid black;
+  border-left-style: solid;
+}
+
+.about p {
+  margin-left: 40px;
+}
+
+.email-link, .linkedin-link, .github-link, .instagram-link {
+  color: black;
+  font-family: var(--fontfamilythirtythree);
+  padding: 10px;
+}
+
+.email-link:hover, .linkedin-link:hover, .github-link:hover, .instagram-link:hover {
+  color: var(--colortwo);
+  text-decoration: none;
+}
+
+.launch-link {
+  background: var(--colorone);
+  color: black;
+}
+
+.launch-link:hover {
+  background: var(--colorone);
+  color: car(--colortwo);
+  text-decoration: none;
+}
+
+.workdescription {
+  text-align: left;
+}
+
+.contactcontent {
+  line-height: 1.5em;
+
 }
