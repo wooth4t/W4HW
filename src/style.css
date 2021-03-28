@@ -36,6 +36,14 @@
   --fontfamilyfourt: 'Ubuntu', sans-serif; /**no**/
   --fontfamilyfourtyone: 'Yrsa', serif;
 
+  /**extrafonts**/
+  --fontfamilyfiftyone: 'IBM Plex Serif', serif;
+  --fontfamilyfiftytwo: 'Lora', serif;
+  --fontfamilyfiftythree: 'PT Sans Narrow', sans-serif;
+  --fontfamilyfiftyfour: 'PT Serif', serif;
+  --fontfamilyfiftyfive: 'Source Serif Pro', serif;
+  --fontfamilyfiftysix: 'Yanone Kaffeesatz', sans-serif;
+
   --colorone:  rgb(158, 160, 125);
   --colortwo: white;
 
