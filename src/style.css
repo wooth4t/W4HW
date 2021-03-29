@@ -41,6 +41,10 @@ section.home p {
   margin: 0;
 }
 
+section.home a {
+  color: white;
+}
+
 section.work .workborder {
   border-right: 10px solid black;
 }
@@ -55,10 +59,6 @@ section.work .worksection {
 
 section.work .workdescription {
   padding: 50px;
-}
-
-section.work .img {
-height: 200px;
 }
 
 section.work p {
