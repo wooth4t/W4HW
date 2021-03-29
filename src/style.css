@@ -12,7 +12,7 @@ h1 {
   font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
   padding: 50px 0 30px 0;
-  margin: 0;
+  margin-left: 10px;
 }
 
 h4 {
@@ -29,6 +29,7 @@ section.home {
 
 section.home .homeborder {
   border-left: 10px solid black;
+  margin-left: 10px;
 }
 
 section.home .about {
@@ -43,6 +44,7 @@ section.home p {
 
 section.home a {
   color: white;
+  margin: 0;
 }
 
 section.work .workborder {
