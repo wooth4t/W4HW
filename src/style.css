@@ -13,6 +13,7 @@ h1 {
   font-size: var(--headingfontsize);
   padding: 50px 0 30px 0;
   margin-left: 10px;
+  text-shadow: 1px 1px 2px white;
 }
 
 h4 {
@@ -69,6 +70,8 @@ section.work p {
 
 section.work h1 {
   text-align: right;
+  text-shadow: 1px 1px 2px var(--colorone);
+
 }
 
 section.work h3 {
