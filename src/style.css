@@ -46,48 +46,81 @@
 
   --colorone:  rgb(158, 160, 125);
   --colortwo: white;
-
 }
 
 h1 {
   font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
-  padding: 20px;
+  padding: 50px 0 30px 0;
+  margin: 0;
 }
-
 
 h4 {
   font-family: var(--fontfamilytwentyfive);
   font-style: italic;
 }
-
-section {
-  margin: 80px 0 ;
-}
-
 p {
   font-family: var(--fontfamilythirtythree);
 }
-
 section.home {
   background: var(--colorone);
-  padding-bottom: 20px;
+  padding: 60px 0;
 }
 
-section.work {
-  justify-content: flex-end;
+section.home .homeborder {
+  border-left: 10px solid black;
 }
 
-section.work .row {
-flex-direction: row;
-justify-content: flex-end;
-margin-bottom: 30px;
-max-width: 75%;
+section.home .about {
+  font-size: var(--contentfontsize);
+  margin: 0 0 0 40px;
+  max-width: 430px;
+}
+
+section.home p {
+  margin: 0;
+}
+
+section.work .workborder {
+  border-right: 10px solid black;
+}
+
+section.work .worksection {
+  display: flex;
+  flex-direction: row;
+  max-width: 75%;
+  margin: 0 40px 20px 0;
+  margin-left: auto;
+}
+
+section.work p {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+section.work h1 {
+  text-align: right;
+}
+
+section.work .launch-link {
+  background: var(--colorone);
+  color: black;
+}
+
+section.work .launch-link:hover {
+  background: var(--colorone);
+  color: car(--colortwo);
+  text-decoration: none;
 }
 
 section.contact {
   background-color: var(--colorone);
-  width: 100%;
+  margin-top: 80px;
+  padding: 50px;
+}
+
+section.contact .contactcontent {
+  line-height: 1.5em;
 }
 
 .navbar {
@@ -97,19 +130,7 @@ section.contact {
 .pagecontent {
   display: block;
   margin: 0 auto;
-  max-width: 800px;
-}
-
-.about {
-  font-size: var(--contentfontsize);
-  max-width: 400px;
-  text-align: left;
-  border-left: 10px solid black;
-  border-left-style: solid;
-}
-
-.about p {
-  margin-left: 40px;
+  max-width: 1200px;
 }
 
 .email-link, .linkedin-link, .github-link, .instagram-link {
@@ -123,22 +144,35 @@ section.contact {
   text-decoration: none;
 }
 
-.launch-link {
-  background: var(--colorone);
-  color: black;
+@media (max-width: 571px) {
+h1 {
+  font-size: 40px;
+  padding: 50px 0 20px 0;
 }
-
-.launch-link:hover {
-  background: var(--colorone);
-  color: car(--colortwo);
-  text-decoration: none;
+p {
+  font-size: 16px;
 }
+section.home .about {
+  max-width: 200px;
+  margin: 0 0 0 20px;
+  }
 
-.workdescription {
-  text-align: left;
+section.work .workimage {
+  display: none;
 }
-
-.contactcontent {
-  line-height: 1.5em;
-
+section.work .worksection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 0;
+  width: 100%;
+  margin-left: auto;
+}
+section.work .workdescription {
+  max-width: 100%;
+  column-width: 100%;
+}
+section.contact {
+  margin-top: 60px;
+  padding: 40px;
+}
 }
