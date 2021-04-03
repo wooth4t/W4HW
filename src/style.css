@@ -4,7 +4,7 @@
   --fontfamilyeight: 'Montserrat Subrayada', sans-serif;
   --fontfamilytwentyfive: 'Arsenal', sans-serif;
   --fontfamilythirtythree: 'Nunito', sans-serif;
-   --colorone:  rgb(158, 160, 125);
+  --colorone:  rgb(158, 160, 125);
   --colortwo: white;
 }
 
@@ -14,6 +14,10 @@ h1 {
   padding: 50px 0 30px 0;
   margin-left: 10px;
   text-shadow: 1px 1px 2px white;
+}
+
+h3 {
+  text-shadow: 2px 2px 2px var(--colorone);
 }
 
 h4 {
@@ -27,96 +31,109 @@ section.home {
   background: var(--colorone);
   padding: 60px 0;
 }
-
 section.home .homeborder {
   border-left: 10px solid black;
   margin-left: 10px;
 }
-
 section.home .about {
   font-size: var(--contentfontsize);
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 0 40px;
   max-width: 430px;
 }
-
 section.home p {
   margin: 0;
 }
-
 section.home a {
   color: white;
-  margin: 0;
-  
+  margin: 0; 
 }
 
 section.work .workborder {
   border-right: 10px solid black;
 }
-
 section.work .worksection {
   display: flex;
   flex-direction: row;
-  max-width: 75%;
+  justify-content: flex-end;
+  max-width: 65%;
   margin: 0 40px 20px 0;
   margin-left: auto;
 }
-
 section.work .workdescription {
-  padding: 30px;
+  padding: 15px;
 }
-
 section.work p {
   margin: 0 0 20px 0;
 }
-
 section.work h1 {
   text-align: right;
   text-shadow: 1px 1px 2px var(--colorone);
-
 }
 
 section.work h3 {
   font-family: var(--fontfamilyeight);
-  text-align: right;
   margin-right: 40px;
   padding: 20px 0;
+  text-align: right;
 }
 
-section.work .launch-link {
+
+section.work a {
   background: var(--colorone);
   color: black;
- 
-}
-section.work a {
   margin: 0 0 30px 0;
 }
 
-section.work .launch-link:hover {
+section.work a:hover {
   background: var(--colorone);
   color: var(--colortwo);
   text-decoration: none;
+  transition: all 100ms ease-in-out;
+
 }
 
 section.work img {
   border-radius: 4px;
-  max-height: 300px;
+  max-width: 100%;
+  max-height: 220px;
+  height: 100%;
   display: block;
   margin: 0 auto;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 
+section.work img:hover {
+background: var(--colorone);
+opacity: 0.5;
+filter: alpha(opacity=50);
+transition: all 100ms ease-in-out;
 }
 
 footer {
   background-color: var(--colorone);
   margin-top: 80px;
-  padding: 50px;
+  padding: 40px 30px 0 40px;
 }
 
 footer .contactcontent {
   line-height: 1.5em;
 }
 
-
+footer .name {
+  color: black;
+  font-size: 11px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+footer .code-link {
+  color: var(--colortwo);
+}
+footer .code-link:hover {
+  color: black;
+  text-decoration: none;
+}
 
 .navbar {
   font-family: var(--fontfamilythirtythree);
@@ -131,13 +148,14 @@ footer .contactcontent {
 .email-link, .linkedin-link, .github-link, .instagram-link {
   color: black;
   font-family: var(--fontfamilythirtythree);
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px;
 }
 
 .email-link:hover, .linkedin-link:hover, .github-link:hover, .instagram-link:hover {
   color: var(--colortwo);
   text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 571px) {
@@ -151,35 +169,67 @@ h3 {
 p {
   font-size: 16px;
 }
+section.home {
+padding-bottom: 40px;
+}
 section.home .about {
   max-width: 200px;
   margin: 0 0 0 20px;
   }
+section.home p {
+  font-size: 13px;
+}
 
+section.work h1 {
+  padding-top: 50px;
+}
 section.work h3 {
   margin-right: 20px;
   padding: 20px;
 }
-section.work .workimage {
-  display: none;
-}
 section.work .worksection {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin: 0 20px 20px 0;
-  width: 100%;
+  /**width: 100%;**/
   max-width: 80%;
+  margin-left: auto; 
+}
+section.work .col-6 {
+  max-width: 75%;
+}
+section.work .workimage {
+  width: 100%;
+  max-width: 300px;
+  height: 180px;
+  display: block;
   margin-left: auto;
-  
 }
 section.work .workdescription {
   max-width: 100%;
-  column-width: 100%;
-  padding: 10px;
+  column-width: 50%;
+  padding: 5px 30px 15px 15px;
+  text-align: right;
+  margin-bottom: 0;
+}
+section.work .workdescription h4 {
+  font-size: 15px;
+  padding-top: 10px;
+}
+section.work .workdescription p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+section.work .workdescription a {
+  font-size: 12px;
 }
 
 footer {
   margin-top: 60px;
-  padding: 30px;
+  padding: 25px 30px 0 25px;
+}
+footer a.instagram-link {
+  padding-bottom: 0;
 }
 }
