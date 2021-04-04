@@ -11,7 +11,7 @@
 h1 {
   font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
-  padding: 50px 0 30px 0;
+  padding: 20px 0 30px 0;
   margin-left: 10px;
   text-shadow: 1px 1px 2px white;
 }
@@ -34,6 +34,16 @@ section.home {
 section.home .homeborder {
   border-left: 10px solid black;
   margin-left: 10px;
+  border-radius: 3px;
+}
+section.home .homeborder-inner {
+  border-left: 2px solid black;
+  margin-left: 3px;
+}
+section.home .music {
+  font-size: 10px;
+  text-align: right;
+  margin: 10px 20px;
 }
 section.home .about {
   font-size: var(--contentfontsize);
@@ -51,6 +61,11 @@ section.home a {
 
 section.work .workborder {
   border-right: 10px solid black;
+  border-radius: 3px;
+}
+section.work .workborder-inner {
+  border-right: 2px solid black;
+  margin-right: 3px;
 }
 section.work .worksection {
   display: flex;
@@ -69,6 +84,7 @@ section.work p {
 section.work h1 {
   text-align: right;
   text-shadow: 1px 1px 2px var(--colorone);
+  padding-top: 40px;
 }
 section.work h3 {
   font-family: var(--fontfamilyeight);
@@ -125,10 +141,7 @@ footer .code-link:hover {
   font-family: var(--fontfamilythirtythree);
   font-weight: bold;
 }
-.music {
-  font-size: 10px;
-  margin-left: auto;
-}
+
 .pagecontent {
   display: block;
   margin: 0 auto;
@@ -151,7 +164,7 @@ footer .code-link:hover {
 @media (max-width: 571px) {
 h1 {
   font-size: 40px;
-  padding: 50px 0 20px 0;
+  padding: 25px 0 20px 0;
 }
 h3 {
   padding: 0;
@@ -166,12 +179,14 @@ section.home .about {
   margin: 0 0 0 20px;
   max-width: 180px;
   }
+section.home .homeborder {
+  border-left: 7px solid black;
+}
+section.home .homeborder-inner {
+  border-left: 1px solid black;
+}
 section.home p {
   font-size: 13px;
-}
-
-section.work h1 {
-  padding-top: 50px;
 }
 section.work h3 {
   margin-right: 20px;
@@ -185,6 +200,9 @@ section.work .worksection {
   /**width: 100%;**/
   max-width: 80%;
   margin-left: auto; 
+}
+section.work .workborder {
+  border-right: 7px solid black;
 }
 section.work .col-6 {
   max-width: 75%;
