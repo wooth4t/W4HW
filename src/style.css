@@ -125,7 +125,10 @@ footer .code-link:hover {
   font-family: var(--fontfamilythirtythree);
   font-weight: bold;
 }
-
+.music {
+  font-size: 10px;
+  margin-left: auto;
+}
 .pagecontent {
   display: block;
   margin: 0 auto;
