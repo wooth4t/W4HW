@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#work">Work</a>
@@ -130,7 +130,7 @@
   <div class="row p-1 worksection shadow-sm">
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Corrected Age Calculator">
-      <img src="/src/img_preemie.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_preemie.jpg" alt="Premature Baby" class="img-fluid p-1" /></a>
     </div>
     <div class="col-6 workdescription">
       <h4>Corrected Age Calculator</h4>
@@ -156,14 +156,14 @@
     </div>
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch Anna's Resume Services">
-      <img src="/src/img_resume.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_resume.jpg" alt="Documents and Laptop" class="img-fluid p-1" /></a>
     </div>
   </div>
 
   <div class="row p-1 worksection shadow-sm">
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Ergonomic Workstation">
-      <img src="/src/img_ergonomics.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_ergonomics.jpg" alt="Ergonomic Workstation" class="img-fluid p-1" /></a>
     </div>
     <div class="col-6 workdescription">
       <h4>The Ergonomic Workstation</h4>
@@ -187,14 +187,14 @@
     </div>
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Children's Storybook App">
-      <img src="/src/img_childrensbooks.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_childrensbooks.jpg" alt="Stack of Children's Books" class="img-fluid p-1" /></a>
     </div>
   </div>
 
   <div class="row p-1 worksection shadow-sm">
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Time Converter App">
-      <img src="/src/img_hourglass.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_clocks.jpg" alt="Clocks" class="img-fluid p-1" /></a>
     </div>
     <div class="col-6 workdescription">
       <h4>Time Converter</h4>
@@ -216,14 +216,14 @@
     </div>
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch Back to the Classics Webpage">
-      <img src="/src/img_piano.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_piano.jpg" alt="Piano Keys" class="img-fluid p-1" /></a>
     </div>
   </div>
 
   <div class="row p-1 worksection shadow-sm">
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Guessing Game">
-      <img src="/src/img_guess.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_guess.jpg" alt="Scrabble Pieces" class="img-fluid p-1" /></a>
     </div>
     <div class="col-6 workdescription">
       <h4>Guessing Game</h4>
@@ -245,7 +245,7 @@
     </div>
     <div class="col-6 workimage">
       <a href="#" target="_blank" title="Launch the Restaurant Menu Webpage">
-      <img src="/src/img_menu.jpg" alt="no image" class="img-fluid p-1" /></a>
+      <img src="/src/img_menu.jpg" alt="Food Menu" class="img-fluid p-1" /></a>
     </div>
   </div>
 
@@ -281,5 +281,13 @@
   </div>
 </footer>
 
+<script>
+  $(document).ready(function () {
+      $("nav a").click(function () {
+        $("nav a").removeClass("active");
+        $(this).addClass("active");
+        });
+    });
+</script>
 </body>
 </html>

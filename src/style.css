@@ -103,12 +103,12 @@ footer {
 }
 
 footer .contactcontent {
-  line-height: 1.5em;
+  font-size: 14px;
 }
 
 footer .name {
   color: black;
-  font-size: 11px;
+  font-size: 12px;
   padding-bottom: 10px;
   text-align: right;
 }
@@ -120,8 +120,10 @@ footer .code-link:hover {
   text-decoration: none;
 }
 
+
 .navbar {
   font-family: var(--fontfamilythirtythree);
+  font-weight: bold;
 }
 
 .pagecontent {
@@ -216,5 +218,11 @@ footer {
 }
 footer a.instagram-link {
   padding-bottom: 0;
+}
+footer .contactcontent {
+  font-size: 11px;
+}
+footer .name {
+  font-size: 10px;
 }
 }
