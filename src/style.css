@@ -111,6 +111,11 @@ section.work img {
   display: block;
   margin: 0 auto;
 }
+section.work .koreanflag {
+  display: inline;
+  height: 20px;
+  margin: 0 5px;
+}
 
 footer {
   background-color: var(--colorone);
