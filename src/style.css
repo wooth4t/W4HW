@@ -61,7 +61,7 @@ section.work .worksection {
   margin-left: auto;
 }
 section.work .workdescription {
-  padding: 15px;
+  padding: 0 50px;
 }
 section.work p {
   margin: 0 0 20px 0;
