@@ -11,8 +11,8 @@
 h1 {
   font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
-  padding: 20px 0 30px 0;
-  margin-left: 10px;
+  padding: 20px 20px 30px 0;
+  margin-left: 30px;
   text-shadow: 1px 1px 2px white;
 }
 
@@ -164,7 +164,8 @@ footer .code-link:hover {
 @media (max-width: 571px) {
 h1 {
   font-size: 40px;
-  padding: 25px 0 20px 0;
+  padding: 25px 12px 20px 0;
+  margin-left: 20px;
 }
 h3 {
   padding: 0;
