@@ -1,6 +1,7 @@
 :root {
   --headingfontsize: 85px;
   --contentfontsize: 22px;
+  --pfontsize: 12px;
   --fontfamilyeight: 'Montserrat Subrayada', sans-serif;
   --fontfamilytwentyfive: 'Arsenal', sans-serif;
   --fontfamilythirtythree: 'Nunito', sans-serif;
@@ -8,29 +9,32 @@
   --colortwo: white;
 }
 
+body, a {
+  font-family: var(--fontfamilythirtythree);
+}
+
 h1 {
   font-family: var(--fontfamilyeight);
   font-size: var(--headingfontsize);
-  padding: 20px 20px 30px 0;
+  padding: 0 20px 30px 0;
   margin-left: 30px;
   text-shadow: 1px 1px 2px white;
 }
-
-h3 {
+section.home .music, section.work h1, section.work h3, footer .name {
+  text-align: right;
   text-shadow: 2px 2px 2px var(--colorone);
 }
-
 h4 {
   font-family: var(--fontfamilytwentyfive);
   font-style: italic;
 }
-p {
-  font-family: var(--fontfamilythirtythree);
+nav, footer a, .name, .code-link {
+  font-weight: 900;
 }
-section.home {
-  background: var(--colorone);
-  padding: 60px 0;
+p, section.work a {
+  font-weight: 500;
 }
+
 section.home .homeborder {
   border-left: 10px solid black;
   margin-left: 10px;
@@ -40,25 +44,6 @@ section.home .homeborder-inner {
   border-left: 2px solid black;
   margin-left: 3px;
 }
-section.home .music {
-  font-size: 10px;
-  text-align: right;
-  margin: 10px 20px;
-}
-section.home .about {
-  font-size: var(--contentfontsize);
-  font-weight: 500;
-  margin: 0 0 0 40px;
-  max-width: 400px;
-}
-section.home p {
-  margin: 0;
-}
-section.home a {
-  color: white;
-  margin: 0; 
-}
-
 section.work .workborder {
   border-right: 10px solid black;
   border-radius: 3px;
@@ -67,6 +52,35 @@ section.work .workborder-inner {
   border-right: 2px solid black;
   margin-right: 3px;
 }
+
+section.home {
+  background: var(--colorone);
+  padding: 55px 0;
+}
+section.home .music {
+  margin-top: 10px;
+}
+section.home .musician {
+  font-size: var(--pfontsize);
+  font-weight: 600;
+}
+audio {
+  display: block;
+  margin-left: auto;
+  margin-top: 5px;
+  width: 185px;
+  height: 30px;
+}
+section.home .about {
+  font-size: var(--contentfontsize);
+  font-weight: 500;
+  margin-left: 40px;
+  max-width: 400px;
+}
+section.home a, footer .code-link {
+  color: var(--colortwo);
+}
+
 section.work .worksection {
   display: flex;
   flex-direction: row;
@@ -76,26 +90,21 @@ section.work .worksection {
   margin-left: auto;
 }
 section.work .workdescription {
-  padding: 0 50px;
-}
-section.work p {
-  margin: 0 0 20px 0;
+  padding: 10px 50px 30px;
 }
 section.work h1 {
-  text-align: right;
-  text-shadow: 1px 1px 2px var(--colorone);
   padding-top: 40px;
 }
 section.work h3 {
   font-family: var(--fontfamilyeight);
-  margin-right: 40px;
-  padding: 20px 0;
-  text-align: right;
+  margin: 0 40px 20px 0;
 }
 section.work a {
   background: var(--colorone);
   color: black;
-  margin: 0 0 30px 0;
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
 }
 section.work a:hover {
   background: var(--colorone);
@@ -104,12 +113,17 @@ section.work a:hover {
   transition: all 10ms ease-in-out;
 }
 section.work img {
+  background-color: var(--colortwo);
   border-radius: 4px;
   max-width: 100%;
   max-height: 220px;
   height: 100%;
   display: block;
   margin: 0 auto;
+}
+section.work img:hover {
+  opacity: .6;
+  transition: all 100ms ease-in-out;
 }
 section.work .koreanflag {
   display: inline;
@@ -120,31 +134,20 @@ section.work .koreanflag {
 footer {
   background-color: var(--colorone);
   margin-top: 80px;
-  padding: 40px 30px 0 40px;
-}
-
-footer .contactcontent {
+  padding: 40px 40px 10px;
   font-size: 14px;
 }
-
 footer .name {
-  color: black;
-  font-size: 12px;
-  padding-bottom: 10px;
-  text-align: right;
+  font-size: var(--pfontsize);
 }
-footer .code-link {
+footer .contact-link {
+  color: black;
+  padding: 10px;
+}
+footer .contact-link:hover {
   color: var(--colortwo);
-}
-footer .code-link:hover {
-  color: black;
   text-decoration: none;
-}
-
-
-.navbar {
-  font-family: var(--fontfamilythirtythree);
-  font-weight: bold;
+  transition: all 100ms ease-in-out;
 }
 
 .pagecontent {
@@ -153,20 +156,20 @@ footer .code-link:hover {
   max-width: 1200px;
 }
 
-.email-link, .linkedin-link, .github-link, .instagram-link {
-  color: black;
-  font-family: var(--fontfamilythirtythree);
-  font-weight: 500;
-  padding: 10px;
-}
-
-.email-link:hover, .linkedin-link:hover, .github-link:hover, .instagram-link:hover {
-  color: var(--colortwo);
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
-}
-
 @media (max-width: 571px) {
+section.home .homeborder {
+  border-left: 7px solid black;
+}
+section.home .homeborder-inner {
+  border-left: 1px solid black;
+}
+section.work .workborder {
+  border-right: 7px solid black;
+}
+section.work .workborder-inner {
+  border-right: 1px solid black;
+}
+
 h1 {
   font-size: 40px;
   padding: 25px 12px 20px 0;
@@ -174,26 +177,26 @@ h1 {
 }
 h3 {
   padding: 0;
+  margin: 0 20px 0 0;
 }
 p {
-  font-size: 16px;
+  font-size: 13px;
 }
 section.home {
 padding-bottom: 40px;
 }
+section.home .music{
+margin-right: 20px;
+}
+audio {
+  width: 180px;
+  height: 20px;
+}
 section.home .about {
-  margin: 0 0 0 20px;
+  margin-left: 20px;
   max-width: 180px;
-  }
-section.home .homeborder {
-  border-left: 7px solid black;
 }
-section.home .homeborder-inner {
-  border-left: 1px solid black;
-}
-section.home p {
-  font-size: 13px;
-}
+
 section.work h3 {
   margin-right: 20px;
   padding: 20px;
@@ -207,46 +210,33 @@ section.work .worksection {
   max-width: 80%;
   margin-left: auto; 
 }
-section.work .workborder {
-  border-right: 7px solid black;
-}
 section.work .col-6 {
-  max-width: 75%;
+  max-width: 60%;
 }
 section.work .workimage {
-  width: 100%;
   max-width: 300px;
-  height: 180px;
-  display: block;
-  margin-left: auto;
+  height: 150px;
+}
+section.work img {
+  margin-right: 12px;
 }
 section.work .workdescription {
   max-width: 100%;
   column-width: 50%;
-  padding: 5px 30px 15px 15px;
+  padding: 5px 30px 15px;
   text-align: right;
   margin-bottom: 0;
 }
 section.work .workdescription h4 {
   font-size: 15px;
-  padding-top: 10px;
-}
-section.work .workdescription p {
-  margin-bottom: 10px;
-  font-size: 13px;
 }
 section.work .workdescription a {
-  font-size: 12px;
+  font-size: var(--pfontsize);
 }
 
 footer {
   margin-top: 60px;
-  padding: 25px 30px 0 25px;
-}
-footer a.instagram-link {
-  padding-bottom: 0;
-}
-footer .contactcontent {
+  padding: 25px 25px 10px;
   font-size: 11px;
 }
 footer .name {
